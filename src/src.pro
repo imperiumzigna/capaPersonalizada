@@ -13,8 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    wizardmarcas.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    wizardmarcas.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    wizardmarcas.ui
