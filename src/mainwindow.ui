@@ -57,7 +57,7 @@ background-color: rgb(26, 26, 26);
      </rect>
     </property>
     <property name="text">
-     <string>...</string>
+     <string>Personalizar</string>
     </property>
     <property name="icon">
      <iconset>
@@ -86,7 +86,7 @@ background-color: rgb(26, 26, 26);
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>...</string>
+     <string>Galeria</string>
     </property>
     <property name="icon">
      <iconset>
@@ -115,7 +115,7 @@ background-color: rgb(26, 26, 26);
      <enum>Qt::NoFocus</enum>
     </property>
     <property name="text">
-     <string>...</string>
+     <string>Configurações</string>
     </property>
     <property name="icon">
      <iconset>
@@ -141,6 +141,24 @@ background-color: rgb(26, 26, 26);
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOp_es">
+    <property name="title">
+     <string>Opções</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuOp_es"/>
+   <addaction name="menuAjuda"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>

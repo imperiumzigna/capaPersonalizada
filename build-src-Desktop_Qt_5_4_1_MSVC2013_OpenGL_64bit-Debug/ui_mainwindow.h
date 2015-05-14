@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolButton>
@@ -30,6 +31,9 @@ public:
     QToolButton *botaoUIGaleria;
     QToolButton *botaoUIConfig;
     QMenuBar *menuBar;
+    QMenu *menuMenu;
+    QMenu *menuOp_es;
+    QMenu *menuAjuda;
     QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -86,10 +90,20 @@ public:
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 711, 20));
+        menuMenu = new QMenu(menuBar);
+        menuMenu->setObjectName(QStringLiteral("menuMenu"));
+        menuOp_es = new QMenu(menuBar);
+        menuOp_es->setObjectName(QStringLiteral("menuOp_es"));
+        menuAjuda = new QMenu(menuBar);
+        menuAjuda->setObjectName(QStringLiteral("menuAjuda"));
         MainWindow->setMenuBar(menuBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
+
+        menuBar->addAction(menuMenu->menuAction());
+        menuBar->addAction(menuOp_es->menuAction());
+        menuBar->addAction(menuAjuda->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -99,9 +113,12 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Personalizador de Capas", 0));
-        botaoUIPersonalizar->setText(QApplication::translate("MainWindow", "...", 0));
-        botaoUIGaleria->setText(QApplication::translate("MainWindow", "...", 0));
-        botaoUIConfig->setText(QApplication::translate("MainWindow", "...", 0));
+        botaoUIPersonalizar->setText(QApplication::translate("MainWindow", "Personalizar", 0));
+        botaoUIGaleria->setText(QApplication::translate("MainWindow", "Galeria", 0));
+        botaoUIConfig->setText(QApplication::translate("MainWindow", "Configura\303\247\303\265es", 0));
+        menuMenu->setTitle(QApplication::translate("MainWindow", "Menu", 0));
+        menuOp_es->setTitle(QApplication::translate("MainWindow", "Op\303\247\303\265es", 0));
+        menuAjuda->setTitle(QApplication::translate("MainWindow", "Ajuda", 0));
     } // retranslateUi
 
 };
