@@ -28,7 +28,9 @@ public:
     QScrollBar *verticalScrollBar;
     QFrame *frame;
     QWidget *gridLayoutWidget;
-    QGridLayout *gridLayout;
+    QGridLayout *marcasCelularesGrid;
+    QWidget *gridLayoutWidget_2;
+    QGridLayout *marcasNotesGrid;
 
     void setupUi(QDialog *wizardMarcas)
     {
@@ -49,20 +51,27 @@ public:
         frame->setObjectName(QStringLiteral("frame"));
         frame->setGeometry(QRect(510, 0, 211, 481));
         frame->setStyleSheet(QLatin1String("#frame{\n"
-"background-color:gray;\n"
+"background-color:rgb(84, 84, 84)\n"
 "\n"
 "}"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         gridLayoutWidget = new QWidget(wizardMarcas);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(20, 20, 471, 451));
-        gridLayout = new QGridLayout(gridLayoutWidget);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
+        gridLayoutWidget->setGeometry(QRect(20, 20, 471, 211));
+        marcasCelularesGrid = new QGridLayout(gridLayoutWidget);
+        marcasCelularesGrid->setObjectName(QStringLiteral("marcasCelularesGrid"));
+        marcasCelularesGrid->setContentsMargins(0, 0, 0, 0);
+        gridLayoutWidget_2 = new QWidget(wizardMarcas);
+        gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
+        gridLayoutWidget_2->setGeometry(QRect(20, 250, 471, 221));
+        marcasNotesGrid = new QGridLayout(gridLayoutWidget_2);
+        marcasNotesGrid->setObjectName(QStringLiteral("marcasNotesGrid"));
+        marcasNotesGrid->setContentsMargins(0, 0, 0, 0);
         frame->raise();
         verticalScrollBar->raise();
         gridLayoutWidget->raise();
+        gridLayoutWidget_2->raise();
 
         retranslateUi(wizardMarcas);
 
@@ -71,7 +80,7 @@ public:
 
     void retranslateUi(QDialog *wizardMarcas)
     {
-        wizardMarcas->setWindowTitle(QApplication::translate("wizardMarcas", "Dialog", 0));
+        wizardMarcas->setWindowTitle(QApplication::translate("wizardMarcas", "Marcas", 0));
     } // retranslateUi
 
 };

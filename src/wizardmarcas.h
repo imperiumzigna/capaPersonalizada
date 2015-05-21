@@ -2,7 +2,11 @@
 #define WIZARDMARCAS_H
 
 #include <QDialog>
-
+#include <QFile>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QStandardItemModel>
+#include <QString>
 namespace Ui {
 class wizardMarcas;
 }
@@ -17,6 +21,7 @@ public:
 
 private:
     Ui::wizardMarcas *ui;
+
 };
 
 #endif // WIZARDMARCAS_H
