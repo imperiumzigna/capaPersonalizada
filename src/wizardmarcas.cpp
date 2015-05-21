@@ -1,9 +1,11 @@
 #include "wizardmarcas.h"
 #include "ui_wizardmarcas.h"
 #include <QPushButton>
-#include <QtSql/qsqldriver.h>
-
-
+#include <QSql>
+#include <QSqlDriver>
+#include <QSqlDatabase>
+#include <QDebug>
+#include <QSqlDriverPlugin>
 wizardMarcas::wizardMarcas(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::wizardMarcas)
@@ -18,6 +20,12 @@ wizardMarcas::wizardMarcas(QWidget *parent) :
      * i=i+1;
      * }
      * */
+QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
+db.setHostName("127.0.0.1");
+db.setDatabaseName("marcas");
+db.setUserName("root");
+db.setPassword("123456");
+db.setPort(3308);
 
 }
 

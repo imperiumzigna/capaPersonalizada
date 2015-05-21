@@ -202,6 +202,7 @@ Makefile: ..\src\src.pro C:\Qt5.4.1\5.4\msvc2013_64_opengl\mkspecs\win32-msvc201
 		C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Cored.prl \
 		C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Widgets.prl \
 		C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Gui.prl \
+		C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Sql.prl \
 		C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-msvc2013 CONFIG+=debug -o Makefile ..\src\src.pro
 C:\Qt5.4.1\5.4\msvc2013_64_opengl\mkspecs\features\spec_pre.prf:
@@ -333,6 +334,7 @@ C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/qtmaind.prl:
 C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Cored.prl:
 C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Widgets.prl:
 C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Gui.prl:
+C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Sql.prl:
 C:/Qt5.4.1/5.4/msvc2013_64_opengl/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-msvc2013 CONFIG+=debug -o Makefile ..\src\src.pro

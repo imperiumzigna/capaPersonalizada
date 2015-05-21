@@ -7,6 +7,7 @@
 #include <QTextStream>
 #include <QStandardItemModel>
 #include <QString>
+#include <QSql>
 namespace Ui {
 class wizardMarcas;
 }
