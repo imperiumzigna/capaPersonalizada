@@ -3,9 +3,9 @@
 # Project created by QtCreator 2015-05-14T10:36:00
 #
 #-------------------------------------------------
-
-QT       += core gui sql
-
+INCLUDEPATH += C:\Program Files (x86)\MySQL\MySQL Workbench 6.0 CE\
+QT       += core gui
+QT +=sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = src

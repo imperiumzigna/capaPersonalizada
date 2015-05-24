@@ -14,7 +14,7 @@ CXX           = cl
 DEFINES       = -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG
 CFLAGS        = -nologo -Zm200 -Zc:wchar_t -FS -O2 -MD -Zc:strictStrings -W3 $(DEFINES)
 CXXFLAGS      = -nologo -Zm200 -Zc:wchar_t -FS -O2 -MD -Zc:strictStrings -GR -W3 -w34100 -w34189 -EHsc $(DEFINES)
-INCPATH       = -I"..\src" -I"." -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore" -I"release" -I"." -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\mkspecs\win32-msvc2013" 
+INCPATH       = -I"..\src" -I"." -I"C:\Program" -I"Files" -I"(x86)\MySQL\MySQL" -I"Workbench" -I"6.0" -I"CE" -I"QT" -I"+=" -I"core" -I"gui" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql" -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore" -I"release" -I"." -I"C:\Qt5.4.1\5.4\msvc2013_64_opengl\mkspecs\win32-msvc2013" 
 LINKER        = link
 LFLAGS        = /NOLOGO /DYNAMICBASE /NXCOMPAT /INCREMENTAL:NO /SUBSYSTEM:WINDOWS "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"
 LIBS          = glu32.lib opengl32.lib gdi32.lib user32.lib /LIBPATH:C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib\qtmain.lib shell32.lib C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib\Qt5Widgets.lib C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib\Qt5Gui.lib C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib\Qt5Sql.lib C:\Qt5.4.1\5.4\msvc2013_64_opengl\lib\Qt5Core.lib 
@@ -271,7 +271,7 @@ release\moc_mainwindow.cpp: C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qtabwidget.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qicon.h \
 		..\src\mainwindow.h
-	C:\Qt5.4.1\5.4\msvc2013_64_opengl\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/mkspecs/win32-msvc2013 -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src" -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtWidgets -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtGui -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtSql -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtCore -I. ..\src\mainwindow.h -o release\moc_mainwindow.cpp
+	C:\Qt5.4.1\5.4\msvc2013_64_opengl\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/mkspecs/win32-msvc2013 -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src" -IC:/Program -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/Files" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/(x86)/MySQL/MySQL" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/Workbench" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/6.0" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/CE" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/QT" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/+=" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/core" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/gui" -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtWidgets -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtGui -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtSql -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtCore -I. ..\src\mainwindow.h -o release\moc_mainwindow.cpp
 
 release\moc_wizardmarcas.cpp: C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\QDialog \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qdialog.h \
@@ -387,8 +387,12 @@ release\moc_wizardmarcas.cpp: C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidget
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qabstractitemmodel.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qicon.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QString \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSql \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsql.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDatabase \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldatabase.h \
 		..\src\wizardmarcas.h
-	C:\Qt5.4.1\5.4\msvc2013_64_opengl\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/mkspecs/win32-msvc2013 -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src" -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtWidgets -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtGui -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtSql -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtCore -I. ..\src\wizardmarcas.h -o release\moc_wizardmarcas.cpp
+	C:\Qt5.4.1\5.4\msvc2013_64_opengl\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/mkspecs/win32-msvc2013 -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src" -IC:/Program -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/Files" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/(x86)/MySQL/MySQL" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/Workbench" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/6.0" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/CE" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/QT" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/+=" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/core" -I"C:/Users/Avell B154 PLUS/Documents/GitHub/capaPersonalizada/src/gui" -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtWidgets -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtGui -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtSql -IC:/Qt5.4.1/5.4/msvc2013_64_opengl/include/QtCore -I. ..\src\wizardmarcas.h -o release\moc_wizardmarcas.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -525,7 +529,11 @@ release\main.obj: ..\src\main.cpp ..\src\mainwindow.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qeventloop.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qguiapplication.h \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qinputmethod.h
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qinputmethod.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSql \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsql.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDatabase \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldatabase.h
 
 release\mainwindow.obj: ..\src\mainwindow.cpp ..\src\mainwindow.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\QMainWindow \
@@ -646,7 +654,11 @@ release\mainwindow.obj: ..\src\mainwindow.cpp ..\src\mainwindow.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\QStandardItemModel \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qstandarditemmodel.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qabstractitemmodel.h \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QString
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QString \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSql \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsql.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDatabase \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldatabase.h
 
 release\wizardmarcas.obj: ..\src\wizardmarcas.cpp ..\src\wizardmarcas.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\QDialog \
@@ -763,14 +775,28 @@ release\wizardmarcas.obj: ..\src\wizardmarcas.cpp ..\src\wizardmarcas.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qabstractitemmodel.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtGui\qicon.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QString \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSql \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsql.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDatabase \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldatabase.h \
 		ui_wizardmarcas.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\QPushButton \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qpushbutton.h \
 		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qabstractbutton.h \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDatabase \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldatabase.h \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsql.h \
-		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QDebug
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDriver \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldriver.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\QDebug \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlDriverPlugin \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqldriverplugin.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qplugin.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qpointer.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qjsonobject.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qjsonvalue.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtCore\qfactoryinterface.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\QMessageBox \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtWidgets\qmessagebox.h \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\QSqlError \
+		C:\Qt5.4.1\5.4\msvc2013_64_opengl\include\QtSql\qsqlerror.h
 
 release\moc_mainwindow.obj: release\moc_mainwindow.cpp 
 

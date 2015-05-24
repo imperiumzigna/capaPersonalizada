@@ -6,6 +6,8 @@
 #include <QSqlDatabase>
 #include <QDebug>
 #include <QSqlDriverPlugin>
+#include <QMessageBox>
+#include <QSqlError>
 wizardMarcas::wizardMarcas(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::wizardMarcas)
@@ -20,12 +22,13 @@ wizardMarcas::wizardMarcas(QWidget *parent) :
      * i=i+1;
      * }
      * */
-QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-db.setHostName("127.0.0.1");
+QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+db.setHostName("localhost");
 db.setDatabaseName("marcas");
 db.setUserName("root");
 db.setPassword("123456");
 db.setPort(3308);
+db.open();
 
 }
 

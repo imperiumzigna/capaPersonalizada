@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0" prefWidth="591.0" style="-fx-background-color: rgb(56,54,52);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capajava.FXMLLayoutPrincipalController">
+   <children>
+      <HBox layoutX="48.0" layoutY="65.0" spacing="20.0">
+         <children>
+            <Button id="buttonConfig" layoutX="50.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#buttonClickedConfig" prefHeight="125.0" prefWidth="152.0">
+               <graphic>
+                  <ImageView fitHeight="118.0" fitWidth="132.0">
+                     <image>
+                        <Image url="@config.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="buttonEditor" layoutX="234.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#buttonClickedEditor" prefHeight="125.0" prefWidth="152.0">
+               <graphic>
+                  <ImageView fitHeight="114.0" fitWidth="131.0">
+                     <image>
+                        <Image url="@responsive17.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button id="buttonGallery" layoutX="419.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#buttonClickedGallery" prefHeight="125.0" prefWidth="152.0">
+               <graphic>
+                  <ImageView fitHeight="118.0" fitWidth="125.0">
+                     <image>
+                        <Image url="@photos13.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

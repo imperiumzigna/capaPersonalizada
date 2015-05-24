@@ -95,7 +95,7 @@ background-color:rgb(84, 84, 84)
     </property>
     <property name="styleSheet">
      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-font-color:rgb(255, 255, 255);</string>
+</string>
     </property>
     <property name="text">
      <string>Marca Celular:</string>
@@ -150,7 +150,7 @@ font-color:rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">#label{
-font-color:rgb(255, 255, 255)
+
 }</string>
     </property>
     <property name="text">

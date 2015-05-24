@@ -80,7 +80,7 @@ public:
         label->setGeometry(QRect(20, 20, 111, 16));
         label->setFont(font);
         label->setStyleSheet(QLatin1String("font: 10pt \"MS Shell Dlg 2\";\n"
-"font-color:rgb(255, 255, 255);"));
+""));
         lineEdit = new QLineEdit(frame);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setGeometry(QRect(20, 40, 161, 16));
@@ -96,7 +96,7 @@ public:
         label_3->setGeometry(QRect(20, 80, 111, 16));
         label_3->setFont(font);
         label_3->setStyleSheet(QLatin1String("#label{\n"
-"font-color:rgb(255, 255, 255)\n"
+"\n"
 "}"));
         gridLayoutWidget = new QWidget(wizardMarcas);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));

@@ -8,8 +8,10 @@
 #include <QStandardItemModel>
 #include <QString>
 #include <QSql>
+#include <QSqlDatabase>
 namespace Ui {
 class wizardMarcas;
+
 }
 
 class wizardMarcas : public QDialog
