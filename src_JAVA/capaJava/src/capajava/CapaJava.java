@@ -26,9 +26,9 @@ public class CapaJava extends Application {
     public void start(Stage stage) throws Exception {
         
         Parent root = FXMLLoader.load(getClass().getResource("FXMLLayoutPrincipal.fxml"));
-        Parent layoutBuscaMarca = FXMLLoader.load(getClass().getResource("FXMLLayoutEditorBuscaMarca.fxml"));
+        
         Scene scene = new Scene(root);
-        Scene scene02= new Scene(layoutBuscaMarca);
+        
         stage.setTitle("Personalizador de Capas");
         stage.setScene(scene);
         stage.show();
