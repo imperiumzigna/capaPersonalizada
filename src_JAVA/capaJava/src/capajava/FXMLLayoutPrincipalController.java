@@ -60,11 +60,39 @@ public class FXMLLayoutPrincipalController implements Initializable {
     }
 
     @FXML
-    private void buttonClickedConfig(MouseEvent event) {
+    private void buttonClickedConfig(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+    getClass().getResource(
+      "FXMLLayoutConfig.fxml"
+    )
+  );
+    Stage stage=new Stage(StageStyle.DECORATED);
+    stage.setScene(
+    new Scene(
+      (Pane) loader.load()
+    )
+  );
+    stage.setTitle("Configurações");
+    stage.show();
+    
     }
 
     @FXML
-    private void buttonClickedGallery(MouseEvent event) {
+    private void buttonClickedGallery(MouseEvent event) throws IOException {
+FXMLLoader loader = new FXMLLoader(
+    getClass().getResource(
+      "FXMLLayoutGallery.fxml"
+    )
+  );
+    Stage stage=new Stage(StageStyle.DECORATED);
+    stage.setScene(
+    new Scene(
+      (Pane) loader.load()
+    )
+  );
+    stage.setTitle("Galeria");
+    stage.show();
+    
     }
 
     
